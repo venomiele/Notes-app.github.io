@@ -8,6 +8,7 @@
     <link href="notes.css" rel="stylesheet">
 </head>
 <body>
+    <h1 class="title">Add a <span class="colored">note!</span></h1>
 <div class="note">
     <div class="btns-container">
         <button class="edit btn"><i class="bi bi-pencil-square"></i></button>
@@ -20,7 +21,10 @@
     <textarea class="main" placeholder="Describe yourself here..."></textarea>
     </div>
     <div class="tools">
-        <button class="color btn"><i class="bi bi-eyedropper"></i></button>
+        <label for="create-color">
+            <i class="bi bi-eyedropper"></i>
+            <input type="color" id="create-color" style="display: none">
+      </label>
         <button class="italic btn"><i class="bi bi-type-italic"></i></button>
         <button class="bold btn"><i class="bi bi-type-bold"></i></button>
         <button class="size-up btn"><i class="bi bi-sort-up"></i></button>
