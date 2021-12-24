@@ -13,26 +13,40 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+.title-container {
+    text-align: center;
+    width: 50%;
+}
+
 .title {
-    margin-bottom: 3rem;
     text-transform: uppercase;
     font-weight: 900;
     color: white;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px black;
 }
 
 .colored {
     color: red;
+    text-shadow: 1px 1px black;
+}
+
+.msg {
+    color: red;
+    font-weight: 900;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
 }
 
 .note {
-    height: 50%;
-    width: 30%;
+    height: 70%;
+    width: 60%;
     background-color: #ffebcd;
     margin: 1.5rem;
     display: grid;
@@ -62,7 +76,7 @@ i:hover {
 }
 
 i {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 
@@ -103,3 +117,48 @@ i {
 .bold-text {
     font-weight: 900;
 }
+
+.presentation {
+    padding: 1.25rem;
+    mix-blend-mode: multiply;
+    color: black;
+    opacity: 0.3;
+    font-weight: 900;
+    user-select: none;
+}
+
+/* Media queries */
+
+@media screen and( max-width: 888px) {
+    .msg {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media screen and (max-width: 626px) {
+    
+.note {
+    height: 50%;
+    width: 80%;
+    background-color: #ffebcd;
+    margin: 1.5rem;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    box-shadow: inset 50px 50px 100px white, 10px 10px 20px black;
+}
+
+.msg {
+    display: none;
+}
+
+.title {
+font-size: 1.5rem;
+}
+
+i {
+    font-size: 1rem;
+}
+
+}
+
