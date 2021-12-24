@@ -1,0 +1,84 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background: url("https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.note {
+    height: 50%;
+    width: 30%;
+    background-color: #ffebcd;
+    margin: 1.5rem;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    box-shadow: inset 50px 50px 100px white, 10px 10px 20px black;
+}
+
+.btns-container {
+    background-color:#f0e68c;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    transform:translateY(-4px);
+    opacity: 0.5;
+}
+
+i {
+    font-size: 1.15rem;
+}
+
+.text-area {
+    height: 100%;
+    width: 100%;
+
+}
+
+.main {
+    min-height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: none;
+    border: none;
+}
+
+.appear {
+    display: block;
+}
+
+.tools {
+    background-color:#f0e68c;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
