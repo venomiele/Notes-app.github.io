@@ -1,10 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -17,6 +16,18 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+
+.colored {
+    color: red;
 }
 
 .note {
@@ -45,27 +56,28 @@ body {
     transition: all 0.3s linear;
 }
 
-.btn:hover {
+i:hover {
     transform:translateY(-4px);
     opacity: 0.5;
 }
 
 i {
     font-size: 1.15rem;
+    cursor: pointer;
 }
 
 .text-area {
     height: 100%;
     width: 100%;
-
 }
+
 
 .main {
     min-height: 100%;
     width: 100%;
     resize: none;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem;
     display: none;
     border: none;
@@ -81,4 +93,13 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: 900;
 }
