@@ -51,6 +51,7 @@ body {
     margin: 1.5rem;
     display: grid;
     grid-template-rows: 10% 80% 10%;
+   overflow: hidden;
     box-shadow: inset 50px 50px 100px white, 10px 10px 20px black;
 }
 
@@ -83,6 +84,7 @@ i {
 .text-area {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -95,6 +97,7 @@ i {
     padding: 1rem;
     display: none;
     border: none;
+    overflow: hidden;
 }
 
 .appear {
